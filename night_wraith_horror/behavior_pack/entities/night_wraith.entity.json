@@ -1,0 +1,71 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "myaddon:night_wraith",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 48,
+        "max": 48
+      },
+      "minecraft:collision_box": {
+        "width": 0.8,
+        "height": 2.4
+      },
+      "minecraft:physics": {
+        "has_gravity": true,
+        "has_drag": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "can_push": true
+      },
+      "minecraft:movement": {
+        "value": 0.32
+      },
+      "minecraft:attack": {
+        "damage": 9
+      },
+      "minecraft:knockback_resistance": {
+        "value": 0.7
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 30
+          }
+        ],
+        "must_see": false
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 2,
+        "attack_interval_min": 1.2,
+        "attack_interval_max": 2.2,
+        "attack_radius": 12,
+        "speed_multiplier": 1.45
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 3,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 4,
+        "look_distance": 18,
+        "probability": 0.95
+      }
+    }
+  }
+}

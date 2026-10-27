@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.0",
+  "sound_definitions": {
+    "ambient.horror.wind": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/ambient/creepy_wind_1",
+        "sounds/ambient/creepy_wind_2"
+      ]
+    },
+    "mob.night_wraith.roar": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/mob/night_wraith_roar_1"
+      ]
+    }
+  }
+}

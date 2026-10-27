@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "myaddon:night_wraith",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/night_wraith"
+      },
+      "geometry": {
+        "default": "geometry.night_wraith"
+      },
+      "render_controllers": [
+        "controller.render.night_wraith"
+      ],
+      "spawn_egg": {
+        "base_color": "#090b10",
+        "overlay_color": "#7b0000"
+      },
+      "animation_controllers": [
+        "controller.animation.night_wraith"
+      ],
+      "animations": {
+        "idle": "animation.night_wraith.idle",
+        "move": "animation.night_wraith.move",
+        "attack": "animation.night_wraith.attack"
+      }
+    }
+  }
+}

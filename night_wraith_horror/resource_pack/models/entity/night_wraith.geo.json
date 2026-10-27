@@ -1,0 +1,66 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.night_wraith",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 2.4,
+        "visible_bounds_height": 3.4,
+        "visible_bounds_offset": [0, 1.7, 0]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [0, 24, 0],
+          "cubes": [
+            { "origin": [-4, 12, -4], "size": [8, 12, 8], "uv": [0, 20] }
+          ]
+        },
+        {
+          "name": "head",
+          "pivot": [0, 25, 0],
+          "cubes": [
+            { "origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 0] }
+          ]
+        },
+        {
+          "name": "arm_left",
+          "pivot": [-5, 23, 0],
+          "cubes": [
+            { "origin": [-8, 12, -2], "size": [3, 12, 3], "uv": [24, 0] }
+          ]
+        },
+        {
+          "name": "arm_right",
+          "pivot": [5, 23, 0],
+          "cubes": [
+            { "origin": [5, 12, -2], "size": [3, 12, 3], "uv": [24, 0] }
+          ]
+        },
+        {
+          "name": "leg_left",
+          "pivot": [-2, 12, 0],
+          "cubes": [
+            { "origin": [-3, 0, -2], "size": [3, 12, 3], "uv": [32, 0] }
+          ]
+        },
+        {
+          "name": "leg_right",
+          "pivot": [2, 12, 0],
+          "cubes": [
+            { "origin": [0, 0, -2], "size": [3, 12, 3], "uv": [32, 0] }
+          ]
+        },
+        {
+          "name": "cape",
+          "pivot": [0, 22, 4],
+          "cubes": [
+            { "origin": [-5, 12, 4], "size": [10, 16, 2], "uv": [16, 18] }
+          ]
+        }
+      ]
+    }
+  ]
+}
